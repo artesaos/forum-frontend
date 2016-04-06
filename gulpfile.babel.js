@@ -79,6 +79,7 @@ gulp.task('fonts', () => {
     .pipe(gulp.dest('dist/fonts'));
 });
 
+
 gulp.task('extras', () => {
   return gulp.src([
     'app/*.*',
@@ -165,3 +166,16 @@ gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
 gulp.task('default', ['clean'], () => {
   gulp.start('build');
 });
+/* :.:.:.:.:.:.:.:.:.:.: OUR TASKS :.:.:.:.:.:.:.:.:.:.: */
+gulp.task('sass-watcher',function(){
+  console.log('Watching sass...');
+  gulp.watch('app/styles/*.scss',['build']);
+});
+
+//To move and minify app/templates -> dist/templates  
+gulp.task('templates',function(){
+  return gulp.src('app/templates/*.html')
+             .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
+             .pipe(gulp.dest('dist/templates'));
+});
+

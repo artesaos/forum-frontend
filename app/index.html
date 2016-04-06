@@ -4,37 +4,198 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>laravel forum front</title>
-
+    <title>Forúm Laravel</title>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
-
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="/bower_components/Materialize/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="/bower_components/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-    
   </head>
-  <body>
-    <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+  <body ng-app="">
     
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Sass</li>
-        <li>jQuery</li>
-      </ul>
+    <div class='hero'>
     </div>
+      
+    <!-- NAVBAR -->
+    <div ng-include="'templates/navbar.html'"></div>
+    <!-- NAVBAR -->
     
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <div class="content">
+      <div class="row">
+        <div class="col l3 m3 s12 foruns-tags">
+          <button class='btn btn-new-forum'>Novo forúm</button>
+          <br>
+          <ul>
+            <li><a href=""> <i class='mdi mdi-message-text'></i> Todos os foruns</a></li>
+            <li><a href=""> <i class='mdi mdi-apps'></i>Tags</a></li>
+            <br>
+            <li><a href="">Tag 1</a></li>
+            <li><a href="">Tag 2</a></li>
+            <li><a href="">Tag 3</a></li>
+            <li><a href="">Tag 4</a></li>
+            <li><a href="">Tag 5</a></li>
+            <li><a href="">Tag 6</a></li>
+            <li><a href="">Tag 6</a></li>
+            <li><a href="">Tag 7</a></li>
+          </ul>
+        </div>
+        <div class="col l9 m9 s12 foruns">
+            <div class="input-field">
+              <input id="search" type="text">
+              <label for="search">O que vocẽ está procurando?</label>
+            </div>
+              
+            <div class="forum-list">
+                <!-- FORUM  -->
+                <div class="forum">
+                  <div class="row">
+                    <div class="col l1">
+                      <img src="images/man.jpg" >
+                    </div>
+                    <div class="col l11">
+                        <div class="row">
+                          <div class="col l8 ">
+                            <a href='#' class='forum-title'>Qual a importância do Windows na vida dos devs?</a>
+                            <p>Há 2 dias, por <a href='#' class='name'>Bill Gates da Silva</a></p>
+                          </div>
+                          
+                          <div class="col l4 info">
+                            <span> Front-End </span> 
+                            <count class='right'> 239 </count>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- FORUM  -->
+                <!-- FORUM  -->
+                <div class="forum">
+                  <div class="row">
+                    <div class="col l1">
+                      <img src="images/man.jpg" >
+                    </div>
+                    <div class="col l11">
+                        <div class="row">
+                          <div class="col l8 ">
+                            <a href='#' class='forum-title'>Qual a importância do Windows na vida dos devs?</a>
+                            <p>Há 2 dias, por <a href='#' class='name'>Bill Gates da Silva</a></p>
+                          </div>
+                          
+                          <div class="col l4 info">
+                            <span> Front-End </span> 
+                            <count class='right'> 239 </count>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- FORUM  -->
+                  
+                  <!-- FORUM  -->
+                <div class="forum">
+                  <div class="row">
+                    <div class="col l1">
+                      <img src="images/man.jpg" >
+                    </div>
+                    <div class="col l11">
+                        <div class="row">
+                          <div class="col l8 ">
+                            <a href='#' class='forum-title'>Qual a importância do Windows na vida dos devs?</a>
+                            <p>Há 2 dias, por <a href='#' class='name'>Bill Gates da Silva</a></p>
+                          </div>
+                          
+                          <div class="col l4 info">
+                            <span> Front-End </span> 
+                            <count class='right'> 239 </count>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- FORUM  -->
+                  
+                  <!-- FORUM  -->
+                <div class="forum">
+                  <div class="row">
+                    <div class="col l1">
+                      <img src="images/man.jpg" >
+                    </div>
+                    <div class="col l11">
+                        <div class="row">
+                          <div class="col l8 ">
+                            <a href='#' class='forum-title'>Qual a importância do Windows na vida dos devs?</a>
+                            <p>Há 2 dias, por <a href='#' class='name'>Bill Gates da Silva</a></p>
+                          </div>
+                          
+                          <div class="col l4 info">
+                            <span> Front-End </span> 
+                            <count class='right'> 239 </count>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- FORUM  -->
+                  
+                  <!-- FORUM  -->
+                <div class="forum">
+                  <div class="row">
+                    <div class="col l1">
+                      <img src="images/man.jpg" >
+                    </div>
+                    <div class="col l11">
+                        <div class="row">
+                          <div class="col l8 ">
+                            <a href='#' class='forum-title'>Qual a importância do Windows na vida dos devs?</a>
+                            <p>Há 2 dias, por <a href='#' class='name'>Bill Gates da Silva</a></p>
+                          </div>
+                          
+                          <div class="col l4 info">
+                            <span> Front-End </span> 
+                            <count class='right'> 239 </count>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- FORUM  -->
+                  
+                  <!-- FORUM  -->
+                <div class="forum">
+                  <div class="row">
+                    <div class="col l1">
+                      <img src="images/man.jpg" >
+                    </div>
+                    <div class="col l11">
+                        <div class="row">
+                          <div class="col l8 ">
+                            <a href='#' class='forum-title'>Qual a importância do Windows na vida dos devs?</a>
+                            <p>Há 2 dias, por <a href='#' class='name'>Bill Gates da Silva</a></p>
+                          </div>
+                          
+                          <div class="col l4 info">
+                            <span> Front-End </span> 
+                            <count class='right'> 239 </count>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- FORUM  -->
+                  
+        
+
+            </div>   <!-- END OF FORUNS LIST -->  
+        </div> <!-- END OF  FORUNS DIV -->
+      </div> <!-- END OF ROW -->
+    </div> <!-- END OF CONTENT -->
+
+
+
+
+    
+  
+
+
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -44,14 +205,11 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
+
+    <script src="/bower_components/angular/angular.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/main.js -->
+    <script src='/bower_components/Materialize/dist/js/materialize.min.js'> </script>
     <script src="scripts/main.js"></script>
-    <!-- endbuild -->
+    <script src="scripts/anim.js"></script>
   </body>
 </html>
