@@ -8,4 +8,9 @@ $ npm install
 $ bower install
 
 $ gulp serve
+
+.::Abra uma nova guia no terminal::.
+
+$ gulp sass-watcher
+
 ```
