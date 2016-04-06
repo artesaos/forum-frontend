@@ -5,7 +5,7 @@
 ```shell
 $ npm install
 
-$ bower serve
+$ gulp serve
 ```
 
 
