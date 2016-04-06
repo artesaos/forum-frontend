@@ -2,7 +2,8 @@
   "name": "laravel-forum-front",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "Materialize": "materialize#^0.97.6"
   },
   "devDependencies": {
     "chai": "^3.5.0",
