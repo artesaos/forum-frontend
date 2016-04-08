@@ -20,6 +20,7 @@ gulp.task('styles', () => {
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/styles'))
+    .pipe(gulp.dest('dist/scripts'))
     .pipe(reload({stream: true}));
 });
 
@@ -30,6 +31,7 @@ gulp.task('scripts', () => {
     .pipe($.babel())
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('.tmp/scripts'))
+    .pipe(gulp.dest('dist/scripts'))
     .pipe(reload({stream: true}));
 });
 
@@ -159,7 +161,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['lint', 'html','components', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
@@ -172,10 +174,10 @@ gulp.task('sass-watcher',function(){
   gulp.watch('app/styles/*.scss',['build']);
 });
 
-//To move and minify app/templates -> dist/templates  
-gulp.task('templates',function(){
-  return gulp.src('app/templates/*.html')
+//To move and minify app/components -> dist/components  
+gulp.task('components',function(){
+  return gulp.src('app/components/*.html')
              .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
-             .pipe(gulp.dest('dist/templates'));
+             .pipe(gulp.dest('dist/components'));
 });
 
