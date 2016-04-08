@@ -4,7 +4,6 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "Materialize": "materialize#^0.97.6",
-    "angular": "1.5.3",
     "mdi": "^1.5.54"
   },
   "devDependencies": {
